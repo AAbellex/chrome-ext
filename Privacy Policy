@@ -1,93 +1,36 @@
-# Privacy Policy for SkuVault WavePick Serial Number Scanner
+Privacy Policy for Creative Audio - SkuVault QC Serializer
+Last Updated: September 28, 2026
 
-**Last Updated:** January 2, 2026
+Introduction
+This Privacy Policy describes how the Creative Audio - SkuVault QC Serializer browser extension ("the extension", "we", "us") handles information. The extension is an internal tool for Creative Audio warehouse staff. It records product serial numbers while orders are checked on the SkuVault Quality Control page.
 
-## Overview
-This Chrome extension is designed for internal use to streamline serial number scanning for SkuVault picking operations. This privacy policy explains what data is collected and how it is used.
+Where the Extension Runs
+The extension only runs on the SkuVault Quality Control page (https://app.skuvault.com/sales/qualitycontrol). It does not read, collect or track anything on any other website.
 
-## Data Collection
+Information the Extension Handles
+Order details shown on the Quality Control page: the Order ID, product SKUs, product codes (UPCs) and the quantities left to check. The extension reads these from the page to work out which items need serial numbers.
+Serial numbers: the serial numbers staff scan or type into the extension.
+The extension does not collect names, email addresses, customer details, passwords, payment information or browsing history.
 
-### Information We Collect
-The extension collects and transmits the following information to the server:
-- **Serial Numbers**: Scanned or manually entered serial numbers
-- **Order IDs**: SkuVault order/sale identification numbers
-- **SKU Codes**: Product SKU identifiers
-- **Quantities**: Number of items scanned
+How the Information Is Used
+To look up each product's price and decide whether it requires a serial number.
+To check which serial numbers are already on file for an order.
+To save scanned serial numbers against the order, for warranty, returns and inventory records.
+Where the Information Is Sent
+Order IDs, SKUs and serial numbers are sent over HTTPS only to Creative Audio's own internal server (driven.synology.me). They are not sent anywhere else.
 
-### How Data is Collected
-Data is collected through:
-- User input in the scanning modal
-- Automated scraping of SkuVault picking pages
-- Barcode scanner input
+We do not sell, rent or share this information with third parties, and it is not used for advertising.
 
-## Data Usage
+The extension does not change any data in SkuVault through SkuVault's API. Its only effect on the SkuVault page is what staff could do by hand: entering the quantity and pressing Pass after serial numbers are saved.
 
-### Purpose
-The collected data is used exclusively to:
-- Track serial numbers for picked items
-- Validate inventory against orders
-- Maintain accurate picking records
-- Check for existing serial numbers to prevent duplicates
+Data Storage
+The extension itself stores nothing on the computer. Serial number records are kept on Creative Audio's internal server and retained for as long as they are needed for warranty, returns and inventory purposes.
 
-### Data Transmission
-All data is transmitted via HTTPS 
+Your Choices
+Removing the extension from Chrome stops it from reading or sending any information.
 
-The extension makes API calls to:
-- `/api/track-serial` - Submit scanned serial numbers
-- `/api/check-serial-required` - Verify if SKUs require serial tracking
-- `/api/check-existing-serials` - Check for previously recorded serials
+Changes to This Policy
+If this policy changes, the updated version will be posted here with a new "Last Updated" date.
 
-## Data Storage
-
-### Local Storage
-The extension does not store any data locally on your device. All information is processed in memory and transmitted to the server.
-
-### Server Storage
-Data transmitted to the server is stored according to the organization's data retention policies.
-
-## Data Sharing
-
-### Third-Party Sharing
-This extension does **NOT**:
-- Share data with third parties
-- Use analytics or tracking services
-- Collect personal information beyond what is necessary for scanning operations
-
-### Internal Use Only
-This extension is designed for internal use only. Data remains within the controlled infrastructure.
-
-## Security
-
-### Secure Transmission
-- All data is transmitted over HTTPS (encrypted connection)
-- API communications use secure protocols
-- No sensitive data is logged to browser console in production
-
-### Access Control
-- Extension only works on SkuVault domains (`v2.skuvault.com`)
-- Requires proper authentication to the internal server
-- Minimal permissions model (activeTab only)
-
-## User Rights
-
-As this is an internal tool:
-- Users can view what data is being sent via the extension interface
-
-## Changes to This Policy
-
-This privacy policy may be updated to reflect changes in the extension's functionality or data handling practices. Users will be notified of significant changes through:
-- Extension update notes
-- Internal company communications
-
-## Contact Information
-
-For questions, concerns, or requests regarding this privacy policy or data handling:
-- Contact IT department or system administrator
-- For technical issues with the extension, contact IT department
-
-## Compliance
-
-This extension is designed for internal use and complies with:
-- The organization's IT policies
-- Chrome Web Store requirements for private extensions
-- General data protection best practices
+Contact
+Questions about this policy can be sent to aabel@creativeaudio.net.
