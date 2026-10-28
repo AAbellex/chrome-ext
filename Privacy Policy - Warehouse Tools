@@ -1,0 +1,45 @@
+Privacy Policy for Warehouse Tools
+Last Updated: October 28, 2026
+
+Introduction
+This Privacy Policy describes how the Warehouse Tools browser extension ("the extension", "we", "us") handles information. The extension is an internal tool for Creative Audio warehouse staff. It helps staff process orders in SkuVault and ShipStation: adding case pack packages to shipments, scanning product serial numbers during picking and quality control, and clocking in and out.
+
+Where the Extension Runs
+The extension only runs on these sites:
+- SkuVault (https://app.skuvault.com and https://v2.skuvault.com)
+- ShipStation (https://*.shipstation.com)
+It does not read, collect or track anything on any other website.
+
+Information the Extension Handles
+- Order details shown on SkuVault pick and Quality Control pages: order numbers, product SKUs, product codes (UPCs) and quantities. The extension reads these from the page to work out which items need serial numbers and to carry a checked order over to ShipStation.
+- Serial numbers that staff scan or type into the extension.
+- Case pack details that staff enter or look up: SKU, product name, package dimensions, weight and quantity per case.
+- The staff member's SkuVault username, read from the SkuVault page header, and the time they clock in or out.
+- A server key entered once by a Creative Audio administrator, which identifies the device to Creative Audio's servers.
+The extension does not collect customer names or addresses, email addresses, passwords, payment information or browsing history.
+
+How the Information Is Used
+- To check whether a product requires a serial number, which serial numbers are already on file for an order, and to save scanned serial numbers against the order for warranty, returns and inventory records.
+- To look up and save case pack definitions and fill in package weights and dimensions in ShipStation.
+- To record staff clock-in and clock-out times for payroll.
+
+Where the Information Is Sent
+All information is sent over HTTPS, only to services operated by Creative Audio:
+- Order numbers, SKUs and serial numbers: Creative Audio's internal server (driven.synology.me).
+- Case pack details and the list of serial-exempt products: Creative Audio's Google Apps Script (script.google.com).
+- Usernames and clock-in/out times: Creative Audio's timeclock service on Google Cloud (cloudfunctions.net).
+We do not sell, rent or share this information with third parties, and it is not used for advertising.
+
+The extension does not change data in SkuVault or ShipStation through their APIs. Its effect on those pages is limited to what staff could do by hand, such as entering quantities, pressing Pass after serial numbers are saved, and filling in package details.
+
+Data Storage
+The extension stores only its settings in the browser's local extension storage: the server key, the case pack settings, and an order carried from SkuVault to ShipStation until it is used. Serial number, case pack and timeclock records are kept on Creative Audio's systems for as long as they are needed for warranty, returns, inventory and payroll purposes.
+
+Your Choices
+Removing the extension from the browser stops it from reading or sending any information and deletes its stored settings.
+
+Changes to This Policy
+If this policy changes, the updated version will be posted here with a new "Last Updated" date.
+
+Contact
+Questions about this policy can be sent to aabel@creativeaudio.net.
